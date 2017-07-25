@@ -11,7 +11,7 @@
         android:layout_margin="10sp"
         android:orientation="vertical">
 
-        <com.tbt.app.Tools.MyCustomTextView
+        <com.tbt.com.Tools.MyCustomTextView
             android:id="@+id/pen_point_list_article_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 android:src="@drawable/ic_like_active"
                 android:padding="5sp"/>
 
-            <com.tbt.app.Tools.MyCustomTextView
+            <com.tbt.com.Tools.MyCustomTextView
                 android:id="@+id/pen_point_list_like_counter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

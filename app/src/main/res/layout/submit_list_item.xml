@@ -14,7 +14,7 @@
         android:layout_marginLeft="20sp"
         android:src="@drawable/ic_home" />
 
-    <com.tbt.app.Tools.MyCustomTextView
+    <com.tbt.com.Tools.MyCustomTextView
         android:id="@+id/submit_list_item_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

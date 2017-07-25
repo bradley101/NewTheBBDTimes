@@ -22,7 +22,7 @@
                 android:layout_height="40sp"
                 android:src="@mipmap/ic_launcher" />
 
-            <com.tbt.app.Tools.MyCustomTextView
+            <com.tbt.com.Tools.MyCustomTextView
                 android:id="@+id/home_feed_user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
