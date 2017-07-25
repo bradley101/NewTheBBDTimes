@@ -2824,7 +2824,14 @@
       <option name="project" value="LOCAL" />
       <updated>1500977993067</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed caption setting">
+      <created>1500984190144</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1500984190144</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2927,7 +2934,8 @@
     <MESSAGE value="solved instance id update on MainActivity launch" />
     <MESSAGE value="added Share function and caption on news feed" />
     <MESSAGE value="fixed unknown regex file name&#10;changed logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed unknown regex file name&#10;changed logo" />
+    <MESSAGE value="fixed caption setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed caption setting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
