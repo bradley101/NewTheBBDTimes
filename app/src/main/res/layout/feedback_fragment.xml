@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText android:id="@+id/feedback_message"
+        android:layout_margin="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:background="@drawable/red_text_area_border"
+        android:hint="Enter Feedback Here (Min. 20 characters)"
+        android:gravity="start"
+        android:padding="10sp"/>
+
+    <Button android:id="@+id/feedback_submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+        android:text="SUBMIT"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+</RelativeLayout>

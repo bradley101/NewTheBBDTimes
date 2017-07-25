@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "60479426397",
+    "firebase_url": "https://thebbdtimes-7a796.firebaseio.com",
+    "project_id": "thebbdtimes-7a796",
+    "storage_bucket": "thebbdtimes-7a796.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60479426397:android:53d992089c025743",
+        "android_client_info": {
+          "package_name": "com.tbt.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60479426397-hivadqj289flh1dkqlpaaucoqcrtb1io.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tbt.app",
+            "certificate_hash": "24dd5fab20477530fda8c433651ec617324f114a"
+          }
+        },
+        {
+          "client_id": "60479426397-e8rl4g66gqg6kskbmn2s4joika906204.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmHBQvCIeSi0Dhena8fgO1mDsZT7HMVBs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60479426397-e8rl4g66gqg6kskbmn2s4joika906204.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
