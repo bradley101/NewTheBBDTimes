@@ -239,15 +239,15 @@ public class SubmitYourStoryFragment extends Fragment {
             }
             if (flag) {
                 File oldfile = new File(filePath);
-                if (hasSymbols(oldfile.getName())) {
-                    Snackbar.make((View) getActivity().findViewById(R.id.main_frame_layout), "Your file name containes spaces and symbols. Try removing them first", Snackbar.LENGTH_LONG).show();
-                    getActivity().onBackPressed();
-                    return;
-                }
-//                if (oldfile.)
-//                File f2 = new File("/storage/sdcard0/" + oldfile.getName().replace("\\s", ""));
-//                copyFileToNewDest(oldfile, f2);
-                final File file = oldfile;
+//                if (hasSymbols(oldfile.getName())) {
+//                    Snackbar.make((View) getActivity().findViewById(R.id.main_frame_layout), "Your file name containes spaces and symbols. Try removing them first", Snackbar.LENGTH_LONG).show();
+//                    getActivity().onBackPressed();
+//                    return;
+//                }
+                String oldFileName = oldfile.getName().toString();
+                File f2 = new File("/storage/sdcard0/tmp" + oldFileName.substring(oldFileName.lastIndexOf(".")));
+                copyFileToNewDest(oldfile, f2);
+                final File file = f2;
 
                 final AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
                 final EditText caption = new EditText(getContext());
@@ -280,7 +280,7 @@ public class SubmitYourStoryFragment extends Fragment {
         String id;
         ProgressDialog dialog;
         String response;
-
+        File f;
         @Override
         protected void onPreExecute() {
             dialog = new ProgressDialog(getContext());
@@ -317,12 +317,15 @@ public class SubmitYourStoryFragment extends Fragment {
                     e.printStackTrace();
                 }
             }
-
+            if (f.exists()) {
+                f.delete();
+            }
         }
 
         @Override
         protected Object doInBackground(Object... objects) {
             File file = (File) objects[0];
+            this.f = file;
             String caption = (String) objects[1];
             RequestBody requestBody = new MultipartBody.Builder()
                     .setType(MultipartBody.FORM)
