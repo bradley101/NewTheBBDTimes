@@ -49,7 +49,7 @@ public class UserSubmissionRecyclerViewAdapter extends RecyclerView.Adapter<User
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         UserSubmissionListItem item = list.get(position);
-        holder.subName.setText(item.getOriginalFileName());
+        holder.subName.setText(item.getCaption());
 
         if (item.getStatus().equals("0")) {
             holder.subStatus.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_pending));

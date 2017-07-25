@@ -5,7 +5,10 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -259,6 +262,28 @@ public class SubmitYourStoryFragment extends Fragment {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         if (caption.getText().toString() == null || caption.getText().toString().equals(""))
                             caption.setText("");
+                        Bitmap img = BitmapFactory.decodeFile(file.getAbsolutePath());
+                        double ar = (img.getWidth() + 0.0) / img.getHeight();
+                        double w = Resources.getSystem().getDisplayMetrics().widthPixels;
+                        double h = w / ar;
+                        Bitmap imgScaled = Bitmap.createScaledBitmap(img, (int) w, (int) h, false);
+
+                        FileOutputStream fos = null;
+                        try {
+                            fos = new FileOutputStream(file);
+                            imgScaled.compress(Bitmap.CompressFormat.PNG, 100, fos);
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        } finally {
+                            if (fos != null) {
+                                try {
+                                    fos.close();
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+
                         asyncTask.execute(file, caption.getText().toString());
                     }
                 });

@@ -5,7 +5,7 @@ package com.tbt.app.ListItems;
  */
 
 public class UserSubmissionListItem {
-    private String id, userId, time, originalFileName, type, baseLocation, status;
+    private String id, userId, time, originalFileName, type, baseLocation, status, caption;
 
     public UserSubmissionListItem() {}
 
@@ -37,6 +37,10 @@ public class UserSubmissionListItem {
         return status;
     }
 
+    public String getCaption() {
+        return caption;
+    }
+
     public void setId(String id) {
         this.id = id;
     }
@@ -63,5 +67,9 @@ public class UserSubmissionListItem {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public void setCaption(String caption) {
+        this.caption = caption;
     }
 }

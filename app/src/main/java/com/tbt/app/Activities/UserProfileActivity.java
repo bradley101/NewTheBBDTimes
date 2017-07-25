@@ -116,6 +116,7 @@ public class UserProfileActivity extends AppCompatActivity {
                             item.setType(object.getString("type"));
                             item.setBaseLocation(object.getString("location"));
                             item.setStatus(object.getString("status"));
+                            item.setCaption(object.getString("caption"));
                             list.add(item);
                         }
                         runOnUiThread(new Runnable() {
