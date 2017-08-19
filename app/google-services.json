@@ -8,17 +8,25 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:60479426397:android:53d992089c025743",
+        "mobilesdk_app_id": "1:60479426397:android:6f1a4a6c8b476fa0",
         "android_client_info": {
-          "package_name": "com.tbt.app"
+          "package_name": "com.tbt"
         }
       },
       "oauth_client": [
         {
-          "client_id": "60479426397-hivadqj289flh1dkqlpaaucoqcrtb1io.apps.googleusercontent.com",
+          "client_id": "60479426397-2smn60mqc4rethr5prs9p75b7d24lnqa.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.tbt.app",
+            "package_name": "com.tbt",
+            "certificate_hash": "142f443f3feb1a91a75f0fdde4c92bf6188063a7"
+          }
+        },
+        {
+          "client_id": "60479426397-imp1102fa9bikj98ac3vn3k8bknlvdhs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tbt",
             "certificate_hash": "24dd5fab20477530fda8c433651ec617324f114a"
           }
         },

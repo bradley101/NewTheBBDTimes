@@ -11,7 +11,7 @@
         android:layout_centerVertical="true"
         android:src="@drawable/ic_home"/>
 
-    <com.tbt.com.Tools.MyCustomTextView
+    <com.tbt.Tools.MyCustomTextView
         android:layout_marginLeft="20sp"
         android:id="@+id/nav_list_item_name"
         android:layout_width="match_parent"
